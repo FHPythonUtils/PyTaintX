@@ -1,10 +1,10 @@
 """A module that contains a base class that has helper methods for testing PyT."""
 import unittest
 
-from pyt.cfg import make_cfg
-from pyt.core.ast_helper import generate_ast
-from pyt.core.module_definitions import project_definitions
-from pyt.core.transformer import PytTransformer
+from pytaintx.cfg import make_cfg
+from pytaintx.core.ast_helper import generate_ast
+from pytaintx.core.module_definitions import project_definitions
+from pytaintx.core.transformer import PytTransformer
 
 
 class BaseTestCase(unittest.TestCase):

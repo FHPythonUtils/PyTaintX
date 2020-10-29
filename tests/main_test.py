@@ -1,25 +1,25 @@
 from unittest import mock
 
 from .base_test_case import BaseTestCase
-from pyt.__main__ import discover_files, main
+from pytaintx.__main__ import discover_files, main
 
 
 class MainTest(BaseTestCase):
-    @mock.patch('pyt.__main__.discover_files')
-    @mock.patch('pyt.__main__.parse_args')
-    @mock.patch('pyt.__main__.find_vulnerabilities')
-    @mock.patch('pyt.formatters.text')
+    @mock.patch('pytaintx.__main__.discover_files')
+    @mock.patch('pytaintx.__main__.parse_args')
+    @mock.patch('pytaintx.__main__.find_vulnerabilities')
+    @mock.patch('pytaintx.formatters.text')
     def test_text_output(self, mock_text, mock_find_vulnerabilities, mock_parse_args, mock_discover_files):
         mock_find_vulnerabilities.return_value = 'stuff'
         example_file = 'examples/vulnerable_code/inter_command_injection.py'
         output_file = 'mocked_outfile'
 
-        import pyt.formatters.text
+        import pytaintx.formatters.text
         mock_discover_files.return_value = [example_file]
         mock_parse_args.return_value = mock.Mock(
             project_root=None,
             baseline=None,
-            formatter=pyt.formatters.text,
+            formatter=pytaintx.formatters.text,
             output_file=output_file,
             only_unsanitised=False,
         )
@@ -32,21 +32,21 @@ class MainTest(BaseTestCase):
             True,
         )
 
-    @mock.patch('pyt.__main__.discover_files')
-    @mock.patch('pyt.__main__.parse_args')
-    @mock.patch('pyt.__main__.find_vulnerabilities')
-    @mock.patch('pyt.formatters.text')
+    @mock.patch('pytaintx.__main__.discover_files')
+    @mock.patch('pytaintx.__main__.parse_args')
+    @mock.patch('pytaintx.__main__.find_vulnerabilities')
+    @mock.patch('pytaintx.formatters.text')
     def test_no_vulns_found(self, mock_text, mock_find_vulnerabilities, mock_parse_args, mock_discover_files):
         mock_find_vulnerabilities.return_value = []
         example_file = 'examples/vulnerable_code/inter_command_injection.py'
         output_file = 'mocked_outfile'
 
-        import pyt.formatters.text
+        import pytaintx.formatters.text
         mock_discover_files.return_value = [example_file]
         mock_parse_args.return_value = mock.Mock(
             project_root=None,
             baseline=None,
-            formatter=pyt.formatters.text,
+            formatter=pytaintx.formatters.text,
             output_file=output_file,
             only_unsanitised=True,
         )
@@ -58,21 +58,21 @@ class MainTest(BaseTestCase):
             False,
         )
 
-    @mock.patch('pyt.__main__.discover_files')
-    @mock.patch('pyt.__main__.parse_args')
-    @mock.patch('pyt.__main__.find_vulnerabilities')
-    @mock.patch('pyt.formatters.json')
+    @mock.patch('pytaintx.__main__.discover_files')
+    @mock.patch('pytaintx.__main__.parse_args')
+    @mock.patch('pytaintx.__main__.find_vulnerabilities')
+    @mock.patch('pytaintx.formatters.json')
     def test_json_output(self, mock_json, mock_find_vulnerabilities, mock_parse_args, mock_discover_files):
         mock_find_vulnerabilities.return_value = 'stuff'
         example_file = 'examples/vulnerable_code/inter_command_injection.py'
         output_file = 'mocked_outfile'
 
-        import pyt.formatters.json
+        import pytaintx.formatters.json
         mock_discover_files.return_value = [example_file]
         mock_parse_args.return_value = mock.Mock(
             project_root=None,
             baseline=None,
-            formatter=pyt.formatters.json,
+            formatter=pytaintx.formatters.json,
             output_file=output_file,
             only_unsanitised=False,
         )

@@ -1,7 +1,7 @@
 import ast
 import unittest
 
-from pyt.helper_visitors import CallVisitor
+from pytaintx.helper_visitors import CallVisitor
 
 
 class CallVisitorTest(unittest.TestCase):

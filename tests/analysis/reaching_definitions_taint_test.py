@@ -1,6 +1,6 @@
 from .analysis_base_test_case import AnalysisBaseTestCase
 
-from pyt.analysis.constraint_table import constraint_table
+from pytaintx.analysis.constraint_table import constraint_table
 
 
 class ReachingDefinitionsTaintTest(AnalysisBaseTestCase):

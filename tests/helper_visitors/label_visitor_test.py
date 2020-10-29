@@ -1,7 +1,7 @@
 import ast
 import unittest
 
-from pyt.helper_visitors import LabelVisitor
+from pytaintx.helper_visitors import LabelVisitor
 
 
 class LabelVisitorTestCase(unittest.TestCase):

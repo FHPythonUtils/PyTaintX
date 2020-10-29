@@ -2,18 +2,18 @@ import os
 
 from .vulnerabilities_base_test_case import VulnerabilitiesBaseTestCase
 
-from pyt.analysis.constraint_table import initialize_constraint_table
-from pyt.analysis.fixed_point import analyse
-from pyt.core.project_handler import (
+from pytaintx.analysis.constraint_table import initialize_constraint_table
+from pytaintx.analysis.fixed_point import analyse
+from pytaintx.core.project_handler import (
     get_directory_modules,
     get_modules
 )
-from pyt.usage import (
+from pytaintx.usage import (
     default_blackbox_mapping_file,
     default_trigger_word_file
 )
-from pyt.vulnerabilities import find_vulnerabilities
-from pyt.web_frameworks import (
+from pytaintx.vulnerabilities import find_vulnerabilities
+from pytaintx.web_frameworks import (
     FrameworkAdaptor,
     is_flask_route_function
 )

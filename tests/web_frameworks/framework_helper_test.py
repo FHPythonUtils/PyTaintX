@@ -1,6 +1,6 @@
 from ..base_test_case import BaseTestCase
 
-from pyt.web_frameworks import (
+from pytaintx.web_frameworks import (
     is_django_view_function,
     is_flask_route_function,
     is_function,

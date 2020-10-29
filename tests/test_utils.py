@@ -1,6 +1,6 @@
 import os
 
-from pyt.core.project_handler import _is_python_file
+from pytaintx.core.project_handler import _is_python_file
 
 
 def get_modules_and_packages(path):

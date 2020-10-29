@@ -1,3 +1,6 @@
+requirements_optional.txt
+poetry.lock
+
 # OS X
 .DS_Store
 

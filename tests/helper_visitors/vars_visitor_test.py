@@ -1,7 +1,7 @@
 import ast
 import unittest
 
-from pyt.helper_visitors import VarsVisitor
+from pytaintx.helper_visitors import VarsVisitor
 
 
 class VarsVisitorTestCase(unittest.TestCase):

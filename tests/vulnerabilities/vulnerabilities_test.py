@@ -3,23 +3,23 @@ import os
 
 from .vulnerabilities_base_test_case import VulnerabilitiesBaseTestCase
 
-from pyt.analysis.constraint_table import initialize_constraint_table
-from pyt.analysis.fixed_point import analyse
-from pyt.core.node_types import Node
-from pyt.usage import (
+from pytaintx.analysis.constraint_table import initialize_constraint_table
+from pytaintx.analysis.fixed_point import analyse
+from pytaintx.core.node_types import Node
+from pytaintx.usage import (
     default_blackbox_mapping_file,
     default_trigger_word_file
 )
-from pyt.vulnerabilities import (
+from pytaintx.vulnerabilities import (
     find_vulnerabilities,
     vulnerabilities
 )
-from pyt.vulnerabilities.trigger_definitions_parser import (
+from pytaintx.vulnerabilities.trigger_definitions_parser import (
     parse,
     Sink,
     Source,
 )
-from pyt.web_frameworks import (
+from pytaintx.web_frameworks import (
     FrameworkAdaptor,
     is_django_view_function,
     is_flask_route_function,
@@ -32,7 +32,7 @@ class EngineTest(VulnerabilitiesBaseTestCase):
         definitions = parse(
             trigger_word_file=os.path.join(
                 os.getcwd(),
-                'pyt',
+                'pytaintx',
                 'vulnerability_definitions',
                 'test_triggers.pyt'
             )
@@ -509,7 +509,7 @@ class EngineDjangoTest(VulnerabilitiesBaseTestCase):
         analyse(cfg_list)
 
         trigger_word_file = os.path.join(
-            'pyt',
+            'pytaintx',
             'vulnerability_definitions',
             'django_trigger_words.pyt'
         )
@@ -547,7 +547,7 @@ class EngineEveryTest(VulnerabilitiesBaseTestCase):
         analyse(cfg_list)
 
         trigger_word_file = os.path.join(
-            'pyt',
+            'pytaintx',
             'vulnerability_definitions',
             'all_trigger_words.pyt'
         )
@@ -573,7 +573,7 @@ class EnginePositionTest(VulnerabilitiesBaseTestCase):
         analyse(cfg_list)
 
         trigger_word_file = os.path.join(
-            'pyt',
+            'pytaintx',
             'vulnerability_definitions',
             'test_positions.pyt'
         )

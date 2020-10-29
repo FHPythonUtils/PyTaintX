@@ -3,7 +3,7 @@ import unittest
 
 from ..test_utils import get_modules_and_packages
 
-from pyt.core.project_handler import (
+from pytaintx.core.project_handler import (
     get_modules,
     _is_python_file
 )

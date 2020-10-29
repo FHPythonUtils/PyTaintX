@@ -1,7 +1,7 @@
 import ast
 import unittest
 
-from pyt.core.transformer import PytTransformer
+from pytaintx.core.transformer import PytTransformer
 
 
 class TransformerTest(unittest.TestCase):

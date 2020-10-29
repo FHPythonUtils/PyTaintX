@@ -3,7 +3,7 @@ from contextlib import contextmanager
 from io import StringIO
 
 from .base_test_case import BaseTestCase
-from pyt.usage import parse_args
+from pytaintx.usage import parse_args
 
 
 @contextmanager
@@ -25,7 +25,7 @@ class UsageTest(BaseTestCase):
 
         self.maxDiff = None
 
-        EXPECTED = """usage: python -m pyt [-h] [-v] [-a ADAPTOR] [-pr PROJECT_ROOT]
+        EXPECTED = """usage: python -m pytaintx [-h] [-v] [-a ADAPTOR] [-pr PROJECT_ROOT]
                      [-b BASELINE_JSON_FILE] [-t TRIGGER_WORD_FILE]
                      [-m BLACKBOX_MAPPING_FILE] [-i] [-o OUTPUT_FILE]
                      [--ignore-nosec] [-r] [-x EXCLUDED_PATHS]
@@ -75,13 +75,13 @@ optional arguments:
             with capture_sys_output() as (_, stderr):
                 parse_args(['-j'])
 
-        EXPECTED = """usage: python -m pyt [-h] [-v] [-a ADAPTOR] [-pr PROJECT_ROOT]
+        EXPECTED = """usage: python -m pytaintx [-h] [-v] [-a ADAPTOR] [-pr PROJECT_ROOT]
                      [-b BASELINE_JSON_FILE] [-t TRIGGER_WORD_FILE]
                      [-m BLACKBOX_MAPPING_FILE] [-i] [-o OUTPUT_FILE]
                      [--ignore-nosec] [-r] [-x EXCLUDED_PATHS]
                      [--dont-prepend-root] [--no-local-imports] [-u] [-j | -s]
                      targets [targets ...]
-python -m pyt: error: the following arguments are required: targets\n"""
+python -m pytaintx: error: the following arguments are required: targets\n"""
 
         self.assertEqual(stderr.getvalue(), EXPECTED)
 
@@ -90,10 +90,10 @@ python -m pyt: error: the following arguments are required: targets\n"""
 #             with capture_sys_output() as (_, stderr):
 #                 parse_args(['-f', 'foo.py', '-trim', '--interactive'])
 
-#         EXPECTED = """usage: python -m pyt [-h] [-f FILEPATH] [-a ADAPTOR] [-pr PROJECT_ROOT]
+#         EXPECTED = """usage: python -m pytaintx [-h] [-f FILEPATH] [-a ADAPTOR] [-pr PROJECT_ROOT]
 #                      [-b BASELINE_JSON_FILE] [-j] [-m BLACKBOX_MAPPING_FILE]
 #                      [-t TRIGGER_WORD_FILE] [-o OUTPUT_FILE] [-trim] [-i]
-# python -m pyt: error: argument -i/--interactive: not allowed with argument -trim/--trim-reassigned-in\n"""
+# python -m pytaintx: error: argument -i/--interactive: not allowed with argument -trim/--trim-reassigned-in\n"""
 
 #         self.assertEqual(stderr.getvalue(), EXPECTED)
 

@@ -2,7 +2,7 @@ import ast
 
 from .cfg_base_test_case import CFGBaseTestCase
 
-from pyt.core.node_types import (
+from pytaintx.core.node_types import (
     BBorBInode,
     EntryOrExitNode,
     Node

@@ -1,2 +1,0 @@
-include pyt/vulnerability_definitions/*.pyt
-include pyt/vulnerability_definitions/*.json

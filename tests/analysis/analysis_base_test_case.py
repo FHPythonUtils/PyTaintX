@@ -2,12 +2,12 @@ from collections import namedtuple
 
 from ..base_test_case import BaseTestCase
 
-from pyt.analysis.constraint_table import (
+from pytaintx.analysis.constraint_table import (
     constraint_table,
     initialize_constraint_table
 )
-from pyt.analysis.fixed_point import FixedPointAnalysis
-from pyt.analysis.lattice import Lattice
+from pytaintx.analysis.fixed_point import FixedPointAnalysis
+from pytaintx.analysis.lattice import Lattice
 
 
 def clear_constraint_table():
