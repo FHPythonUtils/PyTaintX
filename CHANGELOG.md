@@ -23,15 +23,25 @@ If you love PyT, please star our project on GitHub to show your support! :star:
 [@xxxx]: https://github.com/xxxx
 -->
 
-# Unreleased
+# 0.5.1
+##### December 15, 2020
+#### :bug: Bugfixes
+* Fixed issue with locating default trigger definitions
+
+# 0.5
+##### October 29, 2020
+
+#### :newspaper: News
+* Now maintained at https://github.com/FHPythonUtils/PyTaintX
+
+#### :bug: Bugfixes
+* Fixes for python 3.9
 
 #### :tada: New Features
-
 * Added visting functions in the tests of `while` nodes ([#186], thanks [@adrianbn])
 
-[@adrianbn]: https://github.com/adrianbn 
+[@adrianbn]: https://github.com/adrianbn
 [#186]: https://github.com/python-security/pyt/pull/186
-
 
 # 0.42
 ##### November 1st, 2018
@@ -172,7 +182,7 @@ If you love PyT, please star our project on GitHub to show your support! :star:
 
 * Added tests for `vars_visitor.py`, making our overall coverage 91% ([#139], thanks [@stannum-l])
 * Cleaned and organized requirements, `setup.py`, `tox.ini` and `.travis.yml` ([#152], thanks [@bcaller])
-* Cleaned up the new `pyt/core/` folder ([#132]) 
+* Cleaned up the new `pyt/core/` folder ([#132])
 * Fixed all flake8 errors ([#114] & [#130], thanks [@cclauss])
 * Re-organized the entire codebase into different directories ([#126])
 * Return exit code 1 if any non-sanitised vulnerabilities are found ([#156], thanks [@bcaller])

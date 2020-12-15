@@ -26,10 +26,10 @@ There are a few different `vulnerability types`_ used in `how_vulnerable`_.
 
 Configuration
 =============
-The hard-coded list of sources and sinks can be found in the `vulnerability_definitions`_ folder, currently `all_trigger_words.pytaintx`_ is used by default.
+The hard-coded list of sources and sinks can be found in the `vulnerability_definitions`_ folder, currently `all_trigger_words.pyt`_ is used by default.
 
 .. _vulnerability_definitions: https://github.com/python-security/pytaintx/tree/re_organize_code/pytaintx/vulnerability_definitions
-.. _all_trigger_words.pytaintx: https://github.com/python-security/pytaintx/blob/re_organize_code/pytaintx/vulnerability_definitions/all_trigger_words.pytaintx
+.. _all_trigger_words.pyt: https://github.com/python-security/pytaintx/blob/re_organize_code/pytaintx/vulnerability_definitions/all_trigger_words.pyt
 
 Types of Vulnerabilities
 ========================

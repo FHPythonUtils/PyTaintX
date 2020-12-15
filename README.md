@@ -75,7 +75,7 @@ by default it is Flask.
 
 Use the `-t` option to specify sources and sinks, by default [this file
 is
-used](https://github.com/python-security/pytaintx/blob/master/pytaintx/vulnerability_definitions/all_trigger_words.pytaintx).
+used](https://github.com/python-security/pytaintx/blob/master/pytaintx/vulnerability_definitions/all_trigger_words.pyt).
 
 1.  (optional) Customize which library functions propagate taint
 
