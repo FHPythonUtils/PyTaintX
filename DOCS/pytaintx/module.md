@@ -11,7 +11,7 @@ The comand line module of PyT.
 
 ## discover_files
 
-[[find in source code]](../../pytaintx/__main__.py#L33)
+[[find in source code]](../../pytaintx/__main__.py#L26)
 
 ```python
 def discover_files(targets, excluded_files, recursive=False):
@@ -19,7 +19,7 @@ def discover_files(targets, excluded_files, recursive=False):
 
 ## main
 
-[[find in source code]](../../pytaintx/__main__.py#L65)
+[[find in source code]](../../pytaintx/__main__.py#L53)
 
 ```python
 def main(command_line_args=sys.argv[1:]):
@@ -27,7 +27,7 @@ def main(command_line_args=sys.argv[1:]):
 
 ## retrieve_nosec_lines
 
-[[find in source code]](../../pytaintx/__main__.py#L53)
+[[find in source code]](../../pytaintx/__main__.py#L46)
 
 ```python
 def retrieve_nosec_lines(path):

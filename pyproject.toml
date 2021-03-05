@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pytaintx"
-version = "0.5.1"
+version = "0.5.2"
 description = "Find security vulnerabilities in Python web applications"
 authors = []
 license = "GPLv2"

@@ -26,7 +26,7 @@
 
 ## ExprVisitor
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L38)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L28)
 
 ```python
 class ExprVisitor(StmtVisitor):
@@ -42,7 +42,7 @@ class ExprVisitor(StmtVisitor):
 
 ### ExprVisitor().connect_if_allowed
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L170)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L148)
 
 ```python
 def connect_if_allowed(previous_node, node_to_connect_to):
@@ -50,7 +50,7 @@ def connect_if_allowed(previous_node, node_to_connect_to):
 
 ### ExprVisitor().create_local_scope_from_def_args
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L331)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L292)
 
 ```python
 def create_local_scope_from_def_args(
@@ -75,7 +75,7 @@ Create the local scope before entering the body of a function call.
 
 ### ExprVisitor().init_cfg
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L71)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L59)
 
 ```python
 def init_cfg(node):
@@ -83,7 +83,7 @@ def init_cfg(node):
 
 ### ExprVisitor().init_function_cfg
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L96)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L85)
 
 ```python
 def init_function_cfg(node, module_definitions):
@@ -91,7 +91,7 @@ def init_function_cfg(node, module_definitions):
 
 ### ExprVisitor().process_function
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L485)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L419)
 
 ```python
 def process_function(call_node, definition):
@@ -127,7 +127,7 @@ Last node in self.nodes, probably the return of the function appended to self.no
 
 ### ExprVisitor().restore_saved_local_scope
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L398)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L349)
 
 ```python
 def restore_saved_local_scope(saved_variables, args_mapping, line_number):
@@ -146,7 +146,7 @@ saved_variables(list[SavedVariable])
 
 ### ExprVisitor().return_handler
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L447)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L389)
 
 ```python
 def return_handler(
@@ -168,7 +168,7 @@ first_node(EntryOrExitNode or RestoreNode): Used to connect previous statements 
 
 ### ExprVisitor().save_def_args_in_temp
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L247)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L215)
 
 ```python
 def save_def_args_in_temp(
@@ -197,7 +197,7 @@ first_node(EntryOrExitNode or None or RestoreNode): Used to connect previous sta
 
 ### ExprVisitor().save_local_scope
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L198)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L173)
 
 ```python
 def save_local_scope(line_number, saved_function_call_index):
@@ -217,7 +217,7 @@ first_node(EntryOrExitNode or None or RestoreNode): Used to connect previous sta
 
 ### ExprVisitor().visit_Attribute
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L142)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L130)
 
 ```python
 def visit_Attribute(node):
@@ -225,7 +225,7 @@ def visit_Attribute(node):
 
 ### ExprVisitor().visit_Call
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L556)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L483)
 
 ```python
 def visit_Call(node):
@@ -233,7 +233,7 @@ def visit_Call(node):
 
 ### ExprVisitor().visit_Name
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L147)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L133)
 
 ```python
 def visit_Name(node):
@@ -241,7 +241,7 @@ def visit_Name(node):
 
 ### ExprVisitor().visit_NameConstant
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L152)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L136)
 
 ```python
 def visit_NameConstant(node):
@@ -249,7 +249,7 @@ def visit_NameConstant(node):
 
 ### ExprVisitor().visit_Str
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L157)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L139)
 
 ```python
 def visit_Str(node):
@@ -257,7 +257,7 @@ def visit_Str(node):
 
 ### ExprVisitor().visit_Subscript
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L160)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L142)
 
 ```python
 def visit_Subscript(node):
@@ -265,7 +265,7 @@ def visit_Subscript(node):
 
 ### ExprVisitor().visit_Tuple
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L165)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L145)
 
 ```python
 def visit_Tuple(node):
@@ -273,7 +273,7 @@ def visit_Tuple(node):
 
 ### ExprVisitor().visit_Yield
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L119)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L108)
 
 ```python
 def visit_Yield(node):
@@ -281,7 +281,7 @@ def visit_Yield(node):
 
 ### ExprVisitor().visit_YieldFrom
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L139)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L127)
 
 ```python
 def visit_YieldFrom(node):
@@ -289,7 +289,7 @@ def visit_YieldFrom(node):
 
 ### ExprVisitor().visit_and_get_function_nodes
 
-[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L364)
+[[find in source code]](../../../pytaintx/cfg/expr_visitor.py#L319)
 
 ```python
 def visit_and_get_function_nodes(definition, first_node):

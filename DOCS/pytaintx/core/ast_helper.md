@@ -13,7 +13,7 @@ Useful when working with the ast module.
 
 ## Arguments
 
-[[find in source code]](../../../pytaintx/core/ast_helper.py#L81)
+[[find in source code]](../../../pytaintx/core/ast_helper.py#L82)
 
 ```python
 class Arguments():
@@ -24,7 +24,7 @@ Represents arguments of a function.
 
 ## generate_ast
 
-[[find in source code]](../../../pytaintx/core/ast_helper.py#L27)
+[[find in source code]](../../../pytaintx/core/ast_helper.py#L28)
 
 ```python
 @lru_cache()
@@ -39,7 +39,7 @@ Generate an Abstract Syntax Tree using the ast module.
 
 ## get_call_names
 
-[[find in source code]](../../../pytaintx/core/ast_helper.py#L66)
+[[find in source code]](../../../pytaintx/core/ast_helper.py#L67)
 
 ```python
 def get_call_names(node):
@@ -49,7 +49,7 @@ Get a list of call names.
 
 ## get_call_names_as_string
 
-[[find in source code]](../../../pytaintx/core/ast_helper.py#L76)
+[[find in source code]](../../../pytaintx/core/ast_helper.py#L77)
 
 ```python
 def get_call_names_as_string(node):

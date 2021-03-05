@@ -15,7 +15,7 @@
 
 ## Sink
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L16)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L9)
 
 ```python
 class Sink():
@@ -29,7 +29,7 @@ class Sink():
 
 ### Sink().all_arguments_propagate_taint
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L48)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L44)
 
 ```python
 @property
@@ -38,7 +38,7 @@ def all_arguments_propagate_taint():
 
 ### Sink().arg_propagates
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L37)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L33)
 
 ```python
 def arg_propagates(index):
@@ -46,7 +46,7 @@ def arg_propagates(index):
 
 ### Sink().call
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L54)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L50)
 
 ```python
 @property
@@ -55,7 +55,7 @@ def call():
 
 ### Sink.from_json
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L64)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L60)
 
 ```python
 @classmethod
@@ -64,7 +64,7 @@ def from_json(key, data):
 
 ### Sink().get_kwarg_from_position
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L45)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L41)
 
 ```python
 def get_kwarg_from_position(index):
@@ -72,7 +72,7 @@ def get_kwarg_from_position(index):
 
 ### Sink().kwarg_propagates
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L41)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L37)
 
 ```python
 def kwarg_propagates(keyword):
@@ -80,7 +80,7 @@ def kwarg_propagates(keyword):
 
 ### Sink().trigger_word
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L60)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L56)
 
 ```python
 @property
@@ -89,7 +89,7 @@ def trigger_word():
 
 ## parse
 
-[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L69)
+[[find in source code]](../../../pytaintx/vulnerabilities/trigger_definitions_parser.py#L65)
 
 ```python
 def parse(trigger_word_file):

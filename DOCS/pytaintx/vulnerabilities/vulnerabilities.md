@@ -26,7 +26,7 @@ Module for finding vulnerabilities based on a definitions file.
 
 ## append_node_if_reassigned
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L123)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L87)
 
 ```python
 def append_node_if_reassigned(assignment_list, secondary, node):
@@ -34,7 +34,7 @@ def append_node_if_reassigned(assignment_list, secondary, node):
 
 ## build_sanitiser_node_dict
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L176)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L127)
 
 ```python
 def build_sanitiser_node_dict(cfg, sinks_in_file):
@@ -55,7 +55,7 @@ A string -> TriggerNode dict.
 
 ## filter_cfg_nodes
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L68)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L48)
 
 ```python
 def filter_cfg_nodes(cfg, cfg_node_type):
@@ -63,7 +63,7 @@ def filter_cfg_nodes(cfg, cfg_node_type):
 
 ## find_assignments
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L92)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L65)
 
 ```python
 def find_assignments(assignment_nodes, source, lattice):
@@ -71,7 +71,7 @@ def find_assignments(assignment_nodes, source, lattice):
 
 ## find_sanitiser_nodes
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L210)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L156)
 
 ```python
 def find_sanitiser_nodes(sanitiser, sanitisers_in_file):
@@ -90,7 +90,7 @@ Iterable of sanitiser nodes.
 
 ## find_secondary_sources
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L75)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L52)
 
 ```python
 def find_secondary_sources(assignment_nodes, sources, lattice):
@@ -106,7 +106,7 @@ sources([tuple])
 
 ## find_triggers
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L135)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L93)
 
 ```python
 def find_triggers(nodes, trigger_words, nosec_lines):
@@ -126,7 +126,7 @@ List of found TriggerNodes
 
 ## find_vulnerabilities
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L512)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L413)
 
 ```python
 def find_vulnerabilities(
@@ -153,7 +153,7 @@ A list of vulnerabilities.
 
 ## find_vulnerabilities_in_cfg
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L471)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L376)
 
 ```python
 def find_vulnerabilities_in_cfg(
@@ -180,7 +180,7 @@ Find vulnerabilities in a cfg.
 
 ## get_sink_args
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L228)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L171)
 
 ```python
 def get_sink_args(cfg_node):
@@ -188,7 +188,7 @@ def get_sink_args(cfg_node):
 
 ## get_sink_args_which_propagate
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L243)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L186)
 
 ```python
 def get_sink_args_which_propagate(sink, ast_node):
@@ -196,7 +196,7 @@ def get_sink_args_which_propagate(sink, ast_node):
 
 ## get_tainted_node_in_sink_args
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L364)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L292)
 
 ```python
 def get_tainted_node_in_sink_args(sink_args, nodes_in_constraint):
@@ -204,7 +204,7 @@ def get_tainted_node_in_sink_args(sink_args, nodes_in_constraint):
 
 ## get_vulnerability
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L376)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L301)
 
 ```python
 def get_vulnerability(
@@ -242,7 +242,7 @@ A Vulnerability if it exists, else None
 
 ## get_vulnerability_chains
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L272)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L215)
 
 ```python
 def get_vulnerability_chains(current_node, sink, def_use, chain=[]):
@@ -259,7 +259,7 @@ def_use(dict):
 
 ## how_vulnerable
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L300)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L233)
 
 ```python
 def how_vulnerable(
@@ -294,7 +294,7 @@ A VulnerabilityType depending on how vulnerable the chain is.
 
 ## identify_triggers
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L30)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L19)
 
 ```python
 def identify_triggers(cfg, sources, sinks, lattice, nosec_lines):
@@ -315,7 +315,7 @@ Triggers tuple with sink and source nodes and a sanitiser node dict.
 
 ## label_contains
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L157)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L111)
 
 ```python
 def label_contains(node, triggers):
@@ -335,7 +335,7 @@ trigger_words can be in one node.
 
 ## update_assignments
 
-[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L111)
+[[find in source code]](../../../pytaintx/vulnerabilities/vulnerabilities.py#L80)
 
 ```python
 def update_assignments(assignment_list, assignment_nodes, source, lattice):

@@ -41,7 +41,7 @@
 
 ## change_password
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L806)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L801)
 
 ```python
 @csrf_exempt
@@ -50,7 +50,7 @@ def change_password(request):
 
 ## dashboard
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L621)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L604)
 
 ```python
 def dashboard(request):
@@ -58,7 +58,7 @@ def dashboard(request):
 
 ## download
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L199)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L186)
 
 ```python
 def download(request, file_id):
@@ -66,7 +66,7 @@ def download(request, file_id):
 
 ## download_profile_pic
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L213)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L199)
 
 ```python
 def download_profile_pic(request, user_id):
@@ -74,7 +74,7 @@ def download_profile_pic(request, user_id):
 
 ## forgot_password
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L772)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L763)
 
 ```python
 @csrf_exempt
@@ -83,7 +83,7 @@ def forgot_password(request):
 
 ## index
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L459)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L442)
 
 ```python
 def index(request):
@@ -91,7 +91,7 @@ def index(request):
 
 ## login
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L383)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L373)
 
 ```python
 def login(request):
@@ -99,7 +99,7 @@ def login(request):
 
 ## logout_view
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L378)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L368)
 
 ```python
 def logout_view(request):
@@ -107,7 +107,7 @@ def logout_view(request):
 
 ## manage_groups
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L112)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L108)
 
 ```python
 def manage_groups(request):
@@ -115,7 +115,7 @@ def manage_groups(request):
 
 ## manage_projects
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L74)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L69)
 
 ```python
 def manage_projects(request):
@@ -123,7 +123,7 @@ def manage_projects(request):
 
 ## manage_tasks
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L39)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L35)
 
 ```python
 def manage_tasks(request, project_id):
@@ -131,7 +131,7 @@ def manage_tasks(request, project_id):
 
 ## note_create
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L523)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L505)
 
 ```python
 def note_create(request, project_id, task_id):
@@ -139,7 +139,7 @@ def note_create(request, project_id, task_id):
 
 ## note_delete
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L574)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L555)
 
 ```python
 def note_delete(request, project_id, task_id, note_id):
@@ -147,7 +147,7 @@ def note_delete(request, project_id, task_id, note_id):
 
 ## note_edit
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L547)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L527)
 
 ```python
 def note_edit(request, project_id, task_id, note_id):
@@ -155,7 +155,7 @@ def note_edit(request, project_id, task_id, note_id):
 
 ## profile
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L696)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L681)
 
 ```python
 def profile(request):
@@ -163,7 +163,7 @@ def profile(request):
 
 ## profile_by_id
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L703)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L689)
 
 ```python
 @csrf_exempt
@@ -172,7 +172,7 @@ def profile_by_id(request, user_id):
 
 ## profile_view
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L484)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L467)
 
 ```python
 def profile_view(request, user_id):
@@ -180,7 +180,7 @@ def profile_view(request, user_id):
 
 ## project_create
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L315)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L304)
 
 ```python
 def project_create(request):
@@ -188,7 +188,7 @@ def project_create(request):
 
 ## project_delete
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L369)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L358)
 
 ```python
 def project_delete(request, project_id):
@@ -196,7 +196,7 @@ def project_delete(request, project_id):
 
 ## project_details
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L504)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L488)
 
 ```python
 def project_details(request, project_id):
@@ -204,7 +204,7 @@ def project_details(request, project_id):
 
 ## project_edit
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L343)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L331)
 
 ```python
 def project_edit(request, project_id):
@@ -212,7 +212,7 @@ def project_edit(request, project_id):
 
 ## project_list
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L633)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L618)
 
 ```python
 def project_list(request):
@@ -220,7 +220,7 @@ def project_list(request):
 
 ## register
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L414)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L398)
 
 ```python
 def register(request):
@@ -228,7 +228,7 @@ def register(request):
 
 ## reset_password
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L732)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L721)
 
 ```python
 @csrf_exempt
@@ -237,7 +237,7 @@ def reset_password(request):
 
 ## search
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L654)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L642)
 
 ```python
 def search(request):
@@ -245,7 +245,7 @@ def search(request):
 
 ## show_tutorial
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L677)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L664)
 
 ```python
 def show_tutorial(request, vuln_id):
@@ -253,7 +253,7 @@ def show_tutorial(request, vuln_id):
 
 ## task_complete
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L304)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L293)
 
 ```python
 def task_complete(request, project_id, task_id):
@@ -261,7 +261,7 @@ def task_complete(request, project_id, task_id):
 
 ## task_create
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L233)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L220)
 
 ```python
 def task_create(request, project_id):
@@ -269,7 +269,7 @@ def task_create(request, project_id):
 
 ## task_delete
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L292)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L280)
 
 ```python
 def task_delete(request, project_id, task_id):
@@ -277,7 +277,7 @@ def task_delete(request, project_id, task_id):
 
 ## task_details
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L586)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L567)
 
 ```python
 def task_details(request, project_id, task_id):
@@ -285,7 +285,7 @@ def task_details(request, project_id, task_id):
 
 ## task_edit
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L266)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L253)
 
 ```python
 def task_edit(request, project_id, task_id):
@@ -293,7 +293,7 @@ def task_edit(request, project_id, task_id):
 
 ## task_list
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L648)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L635)
 
 ```python
 def task_list(request):
@@ -301,7 +301,7 @@ def task_list(request):
 
 ## tm_settings
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L830)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L824)
 
 ```python
 def tm_settings(request):
@@ -309,7 +309,7 @@ def tm_settings(request):
 
 ## tutorials
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L671)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L660)
 
 ```python
 def tutorials(request):
@@ -317,7 +317,7 @@ def tutorials(request):
 
 ## upload
 
-[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L170)
+[[find in source code]](../../../../examples/django.nV/taskManager/views.py#L157)
 
 ```python
 def upload(request, project_id):

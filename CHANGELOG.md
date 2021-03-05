@@ -23,6 +23,12 @@ If you love PyT, please star our project on GitHub to show your support! :star:
 [@xxxx]: https://github.com/xxxx
 -->
 
+# 0.5.2
+##### March 5, 2020
+#### :bug: Bugfixes
+* open() encodings set to utf-8
+
+
 # 0.5.1
 ##### December 15, 2020
 #### :bug: Bugfixes
